@@ -1,0 +1,9 @@
+# Copie este arquivo para "application-local.yml" (sem o .example)
+# e preencha com suas credenciais reais do banco de dados.
+# O arquivo "application-local.yml" fica fora do Git (veja .gitignore).
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/escola_rest
+    username: postgres
+    password: sua_senha_aqui

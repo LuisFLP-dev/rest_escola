@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: rest-escola
+
+  # Ativa o profile "local", que carrega as credenciais reais
+  # a partir do arquivo application-local.yml (fora do Git)
+  profiles:
+    active: local
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
