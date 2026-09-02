@@ -20,7 +20,7 @@ public class Professor {
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     @Column(name= "id_professor")
-    private Long idProfessor;
+    private Integer idProfessor;
 
     @ManyToOne(fetch= FetchType.LAZY, optional= false)
     @JoinColumn(name= "id_titulo", nullable= false)
@@ -37,10 +37,10 @@ public class Professor {
     @Column(name= "tx_nome",length= 50 , nullable= false)
     private String nome;
 
-    @Column(name= "tx_sexo", length= 1, nullable= false)
+    @Column(name= "tx_sexo", length= 1, columnDefinition = "bpchar", nullable= false)
     private Sexo sexo;
 
-    @Column(name= "tx_estado_civil", length= 1, nullable= false)
+    @Column(name= "tx_estado_civil", length= 1, columnDefinition = "bpchar",nullable= false)
     private EstadoCivil estadoCivil;
 
     @Column(name = "dt_nascimento", nullable= false)

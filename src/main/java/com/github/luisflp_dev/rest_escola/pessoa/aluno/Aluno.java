@@ -17,13 +17,13 @@ public class Aluno {
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     @Column(name= "id_aluno")
-    private Long idAluno;
+    private Integer idAluno;
 
-    @Column(name= "tx_nome",length = 100, nullable= false)
+    @Column(name= "tx_nome",length = 100, columnDefinition = "bpchar", nullable= false)
     private String nome;
 
 
-    @Column(name= "tx_sexo", length= 1, nullable= false)
+    @Column(name= "tx_sexo", length= 1, columnDefinition = "bpchar", nullable= false)
     private Sexo sexo;
 
     @Column(name = "dt_nascimento", nullable= false)

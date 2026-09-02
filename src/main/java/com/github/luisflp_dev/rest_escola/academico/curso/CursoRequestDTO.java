@@ -5,7 +5,7 @@ import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 
 public record CursoRequestDTO(
-        @NotNull Long idInstituicao,
-        @NotNull Long idTipoCurso,
+        @NotNull Integer idInstituicao,
+        @NotNull Integer idTipoCurso,
         @NotBlank @Size(max = 150) String descricao
 ) {}

@@ -4,7 +4,7 @@ import com.github.luisflp_dev.rest_escola.academico.instituicao.InstituicaoRespo
 import com.github.luisflp_dev.rest_escola.academico.tipocurso.TipoCursoResponseDTO;
 
 public record CursoResponseDTO(
-        Long idCurso,
+        Integer idCurso,
         InstituicaoResponseDTO instituicaoResponseDTO,
         TipoCursoResponseDTO tipoCursoResponseDTO,
         String descricao

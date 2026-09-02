@@ -4,7 +4,7 @@ import com.github.luisflp_dev.rest_escola.academico.curso.CursoResponseDTO;
 import com.github.luisflp_dev.rest_escola.academico.tipodisciplina.TipoDisciplinaResponseDTO;
 
 public record DisciplinaResponseDTO(
-        Long idDisciplina,
+        Integer idDisciplina,
         CursoResponseDTO cursoResponseDTO,
         TipoDisciplinaResponseDTO tipoDisciplinaResponseDTO,
         String sigla,

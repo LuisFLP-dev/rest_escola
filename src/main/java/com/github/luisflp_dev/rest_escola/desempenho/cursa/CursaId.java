@@ -14,10 +14,10 @@ import java.util.Objects;
 public class CursaId implements Serializable {
 
     @Column(name = "id_aluno")
-    private Long idAluno;
+    private Integer idAluno;
 
     @Column(name = "id_disciplina")
-    private Long idDisciplina;
+    private Integer idDisciplina;
 
     @Column(name = "in_ano")
     private Integer ano;

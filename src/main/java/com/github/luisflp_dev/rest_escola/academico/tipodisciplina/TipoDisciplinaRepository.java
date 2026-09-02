@@ -4,5 +4,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface TipoDisciplinaRepository extends JpaRepository<TipoDisciplina, Long> {
+public interface TipoDisciplinaRepository extends JpaRepository<TipoDisciplina, Integer> {
 }

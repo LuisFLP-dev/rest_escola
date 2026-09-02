@@ -41,4 +41,19 @@ public class Cursa {
 
     @Column(name = "bl_aprovado", nullable = false)
     private Boolean aprovado = false;
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Cursa)) return false;
+
+        Cursa other = (Cursa) o;
+
+        return id != null && id.equals(other.getId());
+    }
+
+    @Override
+    public int hashCode() {
+        return getClass().hashCode();
+    }
 }

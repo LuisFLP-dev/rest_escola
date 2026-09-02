@@ -6,7 +6,7 @@ import com.github.luisflp_dev.rest_escola.pessoa.Sexo;
 import java.time.LocalDate;
 
 public record ProfessorResponseDTO(
-        Long idProfessor,
+        Integer idProfessor,
         TituloResponseDTO tituloResponseDTO,
         String nome,
         Sexo sexo,

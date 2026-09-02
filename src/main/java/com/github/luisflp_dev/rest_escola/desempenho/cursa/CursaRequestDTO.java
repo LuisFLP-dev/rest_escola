@@ -6,8 +6,8 @@ import jakarta.validation.constraints.NotNull;
 import java.math.BigDecimal;
 
 public record CursaRequestDTO(
-        @NotNull Long idAluno,
-        @NotNull Long idDisciplina,
+        @NotNull Integer idAluno,
+        @NotNull Integer idDisciplina,
         @NotNull Integer ano,
         @NotNull Integer semestre,
         @NotNull @Min(0) Integer faltas,

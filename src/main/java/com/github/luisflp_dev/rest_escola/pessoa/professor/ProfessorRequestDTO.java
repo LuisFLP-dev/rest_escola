@@ -9,7 +9,7 @@ import jakarta.validation.constraints.Size;
 import java.time.LocalDate;
 
 public record ProfessorRequestDTO(
-        @NotNull Long idTitulo,
+        @NotNull Integer idTitulo,
         @NotBlank @Size(max = 50) String nome,
         @NotNull Sexo sexo,
         @NotNull EstadoCivil estadoCivil,
